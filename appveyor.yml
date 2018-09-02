@@ -1,0 +1,9 @@
+image:
+  - Visual Studio 2015
+  - ubuntu
+
+before_build:
+- cmake .
+build_script: cmake --build .
+test_script:
+- ctest --verbose --parallel 4
